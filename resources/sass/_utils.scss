@@ -1,0 +1,28 @@
+.text-bold {
+    font-weight: 600;
+}
+
+a {
+    text-decoration: none;
+}
+// FLEX
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.justify-content-center {
+    display: flex;
+    justify-content: center;
+}
+
+.flex-center-both {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

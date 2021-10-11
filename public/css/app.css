@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap);.text-bold {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-center-both {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+#single .container {
+  max-width: 1200px;
+}
+#single .info-thumb {
+  height: 100%;
+  padding-bottom: 2rem;
+}
+#single .info-thumb .photo-strip {
+  height: 70px;
+  background-color: dodgerblue;
+  margin-bottom: 2rem;
+}
+#single .info-thumb .photo-strip img {
+  position: relative;
+  top: -250px;
+}
+#single .info-thumb .comics-info {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+#single .info-thumb .comics-info .price {
+  background-color: #35a335;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 2rem;
+}
+#single .info-thumb .comics-info .price .availability {
+  display: flex;
+  align-items: center;
+}
+#single .info-thumb .comics-info .price .availability .stock {
+  padding-right: 50px;
+}
+#single .info-thumb .comics-info .price .availability .btn-check {
+  border-left: 1px solid lightgreen;
+  padding: 15px 15px;
+}
+#single .info-thumb .comics-info .infos {
+  flex-basis: 80%;
+}
+#single .info-thumb .comics-info .infos h1 {
+  margin-bottom: 2rem;
+}
+#single .info-thumb .comics-info .adv {
+  margin-left: 2rem;
+}
+#single .talent-specs {
+  background-color: lightgrey;
+  height: 400px;
+  padding-top: 2rem;
+}
+#single .talent-specs .content {
+  display: flex;
+  justify-content: space-between;
+}
+#single .talent-specs .col {
+  flex-basis: 40%;
+}
+#single .talent-specs .col h1 {
+  margin: 1rem 0;
+}
+#single .talent-specs .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+#single .talent-specs .row p {
+  flex-basis: 80%;
+}
+
+header .header-top {
+  color: #fff;
+  font-weight: bold;
+  background-color: #0c7cec;
+}
+header .header-top .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .header-top .container div {
+  padding: 10px;
+}
+header .header-top .container div i {
+  padding-left: 5px;
+}
+header .header-bottom .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-bottom .container figure {
+  margin: 0;
+}
+header .header-bottom .container figure img {
+  width: 100%;
+}
+header .header-bottom .container ul {
+  display: flex;
+  align-items: center;
+}
+header .header-bottom .container ul li {
+  padding: 0 15px;
+  list-style-type: none;
+  line-height: 150px;
+  text-decoration: none;
+  position: relative;
+}
+header .header-bottom .container ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+header .header-bottom .container ul li a:hover:after, header .header-bottom .container ul li a.active:after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #0c7cec;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+header .header-bottom .container ul li a:hover {
+  color: #0c7cec;
+}
+header .header-bottom .container input {
+  background-color: #fff;
+  background-image: url("../images/search.png");
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: 25px;
+  padding: 10px 0;
+  padding-right: 50px;
+  text-align: right;
+  border: none;
+  border-bottom: 3px solid #0c7cec;
+  color: #242424;
+}
+header .header-bottom .container input:focus {
+  outline: none;
+}
+
+#hero {
+  background-image: url("../images/jumbotron.jpg");
+  height: 350px;
+}
+
+.cards {
+  height: 100%;
+  background-color: #242424;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.cards .container {
+  flex-wrap: wrap;
+  position: relative;
+  margin: 10px 0;
+}
+.cards .container .card {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 16.6666666667%;
+  padding: 10px;
+  height: 350px;
+}
+.cards .container .card img {
+  width: 100%;
+  height: 250px;
+}
+.cards .container .card figcaption {
+  color: white;
+  text-transform: uppercase;
+  padding: 3px;
+}
+.cards .container .button {
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #0c7cec;
+}
+.cards .container .button.series {
+  position: absolute;
+  top: -60px;
+  left: 10px;
+  font-size: 2rem;
+}
+
+.bonus {
+  height: 200px;
+  background-color: #0c7cec;
+}
+.bonus .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+}
+.item img {
+  width: 100%;
+  height: 100px;
+}
+.item span {
+  padding-left: 3px;
+  color: #fff;
+  font-weight: 500;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+footer .footer-top {
+  background-image: url("../images/footer-bg.jpg");
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+footer .footer-top .logo {
+  align-self: center;
+}
+footer .footer-top .links {
+  width: 50%;
+  padding: 10px;
+  height: 100%;
+  flex-wrap: wrap;
+  width: 40%;
+}
+footer .footer-top .links .menu {
+  padding: 0.5rem;
+}
+footer .footer-top .links .menu h3 {
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+footer .footer-top .links ul {
+  list-style-type: none;
+}
+footer .footer-top .links ul li {
+  margin: 5px 0;
+}
+footer .footer-top .links ul li a {
+  color: lightgrey;
+}
+footer .footer-bottom .media {
+  background-color: #242424;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .media .container,
+footer .footer-bottom .media .button {
+  display: flex;
+  align-items: center;
+}
+footer .footer-bottom .social {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+}
+footer .footer-bottom .social h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #0c7cec;
+}
+footer .footer-bottom .social a,
+footer .footer-bottom a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+footer .footer-bottom .button {
+  padding: 10px 15px;
+  border: 1px solid #0c7cec;
+  height: 50px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}

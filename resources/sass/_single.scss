@@ -1,0 +1,93 @@
+#single {
+    .container {
+        max-width: 1200px;
+    }
+
+    .info-thumb {
+        height: 100%;
+        padding-bottom: 2rem;
+
+        .photo-strip {
+            height: 70px;
+            background-color: dodgerblue;
+            margin-bottom: 2rem;
+
+            img {
+                position: relative;
+                top: -250px;
+            }
+        }
+
+        .comics-info {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+
+            .price {
+                background-color: rgb(53, 163, 53);
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                height: 50px;
+                padding: 10px;
+                font-weight: 600;
+                color: white;
+                margin-bottom: 2rem;
+
+                .availability {
+                    display: flex;
+                    align-items: center;
+                    .stock {
+                        padding-right: 50px;
+                    }
+
+                    .btn-check {
+                        border-left: 1px solid lightgreen;
+                        padding: 15px 15px;
+                    }
+                }
+            }
+
+            .infos {
+                flex-basis: 80%;
+                h1 {
+                    margin-bottom: 2rem;
+                }
+            }
+
+            .adv {
+                margin-left: 2rem;
+            }
+        }
+    }
+
+    .talent-specs {
+        background-color: lightgrey;
+        height: 400px;
+        padding-top: 2rem;
+
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .col {
+            flex-basis: 40%;
+
+            h1 {
+                margin: 1rem 0;
+            }
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 2rem 0;
+
+            p {
+                flex-basis: 80%;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+@mixin center($par: "both") {
+    display: flex;
+    @if $par == "horizontal" {
+        justify-content: center;
+    }
+    @elseif $par == "vertical" {
+        align-items: center;
+    }
+    @elseif $par == "around" {
+        align-items: center;
+        justify-content: space-around;
+    }
+    @elseif $par == "evenly" {
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    @elseif $par == "between" {
+        align-items: center;
+        justify-content: space-between;
+    } @else {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@mixin justify($par) {
+    display: flex;
+    @if $par == "between" {
+        justify-content: space-between;
+    }
+}

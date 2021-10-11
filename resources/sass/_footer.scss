@@ -1,0 +1,81 @@
+footer {
+    .container {
+        @include justify("between");
+        width: 100%;
+    }
+    .footer-top {
+        background-image: url("../images/footer-bg.jpg");
+        background-size: cover;
+        height: 400px;
+        width: 100%;
+        color: white;
+        overflow: hidden;
+        .logo {
+            align-self: center;
+        }
+        .links {
+            width: 50%;
+            padding: 10px;
+            height: 100%;
+            flex-wrap: wrap;
+            width: 40%;
+            .menu {
+                padding: 0.5rem;
+                h3 {
+                    margin: 10px 0;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+            ul {
+                list-style-type: none;
+                li {
+                    margin: 5px 0;
+                    a {
+                        color: lightgrey;
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        .media {
+            background-color: $secondary-bg;
+            height: 100px;
+            @include center("vertical");
+            .container,
+            .button {
+                @include center("vertical");
+                // display: flex;
+                // align-items: center;
+            }
+        }
+
+        .social {
+            @include center("evenly");
+            width: 30%;
+            h3 {
+                text-transform: uppercase;
+                font-weight: 500;
+                color: $base-color;
+            }
+        }
+
+        .social a,
+        a {
+            display: block;
+            text-decoration: none;
+            color: $text-main;
+        }
+
+        .button {
+            padding: 10px 15px;
+            border: 1px solid $base-color;
+            height: 50px;
+            color: $text-main;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+}
