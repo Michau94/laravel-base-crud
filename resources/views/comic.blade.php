@@ -11,7 +11,7 @@
             </div>
             <div class="comics-info container">
                 <div class="infos">
-                    <h1>{{ $comic->title }}</h1>
+                    <h1>{{ $comic->name }}</h1>
                     <div class="price">
                         <div class="">US: price {{ $comic->price }}</div>
                         <div class="

@@ -20,7 +20,7 @@
                         {{-- <a href="{{ url('comics/' . $loop->index) }}"><img src="{{ $comic['thumb'] }}" /></a> --}}
                         <a href="{{ route('comic', ['id' => $loop->index]) }}"><img src="{{ $comic->thumb }}" /></a>
                     </figure>
-                    <figcaption> {{ $comic->title }}</figcaption>
+                    <figcaption> {{ $comic->name }}</figcaption>
                 </div>
             @endforeach
 
