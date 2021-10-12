@@ -14,18 +14,18 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', 'HomeController@index');
+Route::get('/', 'HomeController@index')->name('home');
 
 // grouping routes
 
-
+Route::resource('comics', 'ComicController');
 
 
 Route::get('/comics', 'ComicController@index')->name('comics');
 
 
-// ROUTE DINAMICA
-Route::get('/comics/{id}', 'ComicController@show')->name('comic');
+// // ROUTE DINAMICA
+// Route::get('/comics/{id}', 'ComicController@show')->name('comic');
 
 Route::get('/characters', function () {
 
