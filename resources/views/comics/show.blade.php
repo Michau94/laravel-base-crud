@@ -6,7 +6,9 @@
         <section class="info-thumb">
             <div class="photo-strip">
                 <div class="container">
-                    <img src="{{ $comic->thumb }}" alt="Foto">
+                    <div class="thumb">
+                        <img src="{{ $comic->thumb }}" alt="Foto">
+                    </div>
                 </div>
             </div>
             <div class="comics-info container">

@@ -11,10 +11,13 @@
             height: 70px;
             background-color: dodgerblue;
             margin-bottom: 2rem;
-
-            img {
-                position: relative;
-                top: -250px;
+            .thumb {
+                width: 200px;
+                img {
+                    width: 100%;
+                    position: relative;
+                    top: -250px;
+                }
             }
         }
 

@@ -65,7 +65,11 @@ a {
   background-color: dodgerblue;
   margin-bottom: 2rem;
 }
-#single .info-thumb .photo-strip img {
+#single .info-thumb .photo-strip .thumb {
+  width: 200px;
+}
+#single .info-thumb .photo-strip .thumb img {
+  width: 100%;
   position: relative;
   top: -250px;
 }
