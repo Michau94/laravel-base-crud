@@ -24,10 +24,8 @@
                 </div>
             @endforeach
 
-            <div>
-                <span class="button">
-                    Load More
-                </span>
+            <div class="row">
+                <a href="{{ route('comics.create') }}" class="button">Aggiungi Fumetto</a>
             </div>
         </div>
     </section>

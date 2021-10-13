@@ -8,47 +8,47 @@
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Comics",
     ],
     [
 
-        "route" => "comics",
+        "route" => "characters",
         "text" => "Tv",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Games",
     ],
     [
 
-        "route" => "comics",
+        "route" => "characters",
         "text" => "Collectibles",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Videos",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Fans",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "News",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Shop",
     ],
     [
 
-        "route" => "comics",
+        "route" => "home",
         "text" => "Comics",
     ],
 

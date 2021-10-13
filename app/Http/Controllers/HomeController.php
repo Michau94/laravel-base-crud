@@ -11,6 +11,6 @@ class HomeController extends Controller
     {
         $comics = Comic::all();
         $cards = config('bonus_Card');
-        return view('home', ['comics' => $comics, 'cards' => $cards]);
+        return view('comics.index', ['comics' => $comics, 'cards' => $cards]);
     }
 }
