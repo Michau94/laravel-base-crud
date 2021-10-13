@@ -21,6 +21,7 @@
                         <a href="{{ route('comics.show', $comic) }}"><img src="{{ $comic->thumb }}" /></a>
                     </figure>
                     <figcaption> {{ $comic->name }}</figcaption>
+                    <a href="{{ route('comics.edit', $comic->id) }}" class="button">Edit</a>
                 </div>
             @endforeach
 
