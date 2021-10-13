@@ -9,6 +9,12 @@ a {
 
 .d-flex {
     display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
 }
 
 .align-items-center {
