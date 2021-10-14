@@ -21,7 +21,14 @@
                         <a href="{{ route('comics.show', $comic) }}"><img src="{{ $comic->thumb }}" /></a>
                     </figure>
                     <figcaption> {{ $comic->name }}</figcaption>
-                    <a href="{{ route('comics.edit', $comic->id) }}" class="button">Edit</a>
+                    <div class="d-flex">
+                        <a href="{{ route('comics.edit', $comic->id) }}" class="button">Edit</a>
+                        <form action="" method="POST" class="my-2">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="button">Elimina</button>
+                        </form>
+                    </div>
                 </div>
             @endforeach
 
