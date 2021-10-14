@@ -13,7 +13,7 @@
 
         <div class="container">
             <figure>
-                <a href="{{ route('home') }}"><img src={{ asset('images/dc-logo.png') }} alt="Logo" /></a>
+                <a href="{{ route('comics.index') }}"><img src={{ asset('images/dc-logo.png') }} alt="Logo" /></a>
             </figure>
             <nav>
                 <ul>

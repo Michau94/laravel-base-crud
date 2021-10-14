@@ -14,8 +14,9 @@ class ComicController extends Controller
      */
     public function index()
     {
+        $cards = config('bonus_Card');
         $comics = Comic::all();
-        return view('comics.index', compact('comics'));
+        return view('comics.index', compact('comics', 'cards'));
     }
 
     /**
@@ -88,8 +89,10 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Comic $comic)
     {
-        //
+        $comic->delete();
+
+        return redirect()->route('comics.index');
     }
 }

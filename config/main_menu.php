@@ -8,7 +8,7 @@
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Comics",
     ],
     [
@@ -18,7 +18,7 @@
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Games",
     ],
     [
@@ -28,27 +28,27 @@
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Videos",
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Fans",
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "News",
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Shop",
     ],
     [
 
-        "route" => "home",
+        "route" => "characters",
         "text" => "Comics",
     ],
 

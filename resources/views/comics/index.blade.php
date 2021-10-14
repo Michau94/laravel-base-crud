@@ -23,7 +23,8 @@
                     <figcaption> {{ $comic->name }}</figcaption>
                     <div class="d-flex">
                         <a href="{{ route('comics.edit', $comic->id) }}" class="button">Edit</a>
-                        <form action="" method="POST" class="my-2">
+                        <form action="{{ route('comics.destroy', compact('comic')) }}" method="POST"
+                            class="my-2">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="button">Elimina</button>
