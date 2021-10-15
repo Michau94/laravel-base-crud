@@ -26,8 +26,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        $team = new Comic();
-        return view('comics.create', compact('team'));
+        $comic = new Comic();
+        return view('comics.create', compact('comic'));
     }
 
     /**
@@ -91,6 +91,16 @@ class ComicController extends Controller
      */
     public function update(Request $request, Comic $comic)
     {
+        $request->validate([
+            'name' => 'required | unique:comics',
+            'description' => 'required',
+            'thumb' => 'required | max:255',
+            'price' => 'required',
+            'series' => 'required | max:50',
+            'sales_date' => 'required',
+            'type' => 'required | max:50'
+        ]);
+
         $data = $request->all();
         $comic->update($data);
         return redirect()->route('comics.show', $comic);
