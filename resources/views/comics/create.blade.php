@@ -6,13 +6,20 @@
 
     <h1>Aggiungi Nuovo Fumetto</h1>
     <hr>
+    @if ($errors->any())
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    @endif
 
     <form action="{{ route('comics.store') }}" method="POST">
         @csrf
         <div class="d-flex">
             <div class="formfill">
                 <label for="title">Title</label>
-                <input type="text" id="title" name="name">
+                <input type="text" id="title" name="name" value="{{ old('name', $team->name) }}">
             </div>
             <div class="formfill">
                 <label for="description">Description</label>
