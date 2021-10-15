@@ -23,8 +23,8 @@
                     <figcaption> {{ $comic->name }}</figcaption>
                     <div class="d-flex">
                         <a href="{{ route('comics.edit', $comic->id) }}" class="button">Edit</a>
-                        <form action="{{ route('comics.destroy', compact('comic')) }}" method="POST"
-                            class="my-2">
+                        <form action="{{ route('comics.destroy', compact('comic')) }}" method="POST" class="my-2"
+                            id="delete-button">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="button">Elimina</button>
@@ -55,5 +55,17 @@
 
     </section>
 
+
+@endsection
+
+@section('scripts')
+    <script>
+        const deleteButtonElement = document.getElementById('delete-button');
+        deleteButtonElement.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const confirm = window.confirm('Sei sicuro di voler procedere?');
+            if (confirm) this.submit();
+        })
+    </script>
 
 @endsection
